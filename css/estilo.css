@@ -1,0 +1,78 @@
+h1 {
+	color:blue;
+	text-align: center;
+}
+
+header#cabecera img {	/*a descendiente*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:10%;
+}
+
+header nav ul li.elemento-menu {
+	display:inline;
+	list-style-type: none;
+}
+
+ul#menu {
+	text-align: center;
+}
+
+footer > p {	/*a hijos directos*/
+	font-style: italic;
+
+}
+
+footer#footer {
+	text-align: center;
+}
+
+aside h3 + h4 {
+	font-style: italic;
+	color:green;
+}
+
+aside h5 ~ p {
+	font-size: 8pt;
+}
+
+aside h5[title$="small"] {
+	text-decoration: underline;
+}
+
+aside li[name="fork"] {
+	list-style-image: url("https://goo.gl/y0yaro");
+}
+
+header nav ul li:hover {
+	color:green;
+}
+
+p.descripcion:first-letter {
+	font-size: 22pt;
+	font-weight: bold;
+}
+
+article img{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+}
+
+
+/*MANTENGA COMENTADA ESTA PARTE HASTA EL FINAL*/
+section#left {
+	float:left;
+	width:70%;
+	
+}
+aside#right {
+	float:right;
+	width:25%;
+}
+
+footer#footer {
+	clear:both;
+}
