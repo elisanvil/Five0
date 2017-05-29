@@ -1,0 +1,4 @@
+git checkout -b gh-pages
+git push -u origin gh-pages
+
+user_name.github.io/nombre_proyecto
