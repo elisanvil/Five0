@@ -1,0 +1,37 @@
+git init					Crea un repo vacío
+git status					Ver el estado de los archivos
+
+git log						Ver el historial de cambios
+git log -p -1					Mostrar las líneas donde ocurrieron los cambios
+
+git config (--global) user.name "nombre"
+git config (--global) user.email "email"
+git config --list				Listar propiedades configuradas
+
+git remote -v					Ver la dirección remota
+
+git commit --amend --no-edit 			Modificar un commit y dejar el mismo nombre
+git commit --amend -m "mensaje"			Modificar un commit con otro nombre
+
+git reset HEAD~numero				Deshacer commits (especificar #: último, penúltimo..)
+git remote add <nombre> <dirección_proyecto>	Agregar otra dirección remota
+
+git fetch origin				Ir a buscar los archivos al servidor (sin merge)
+git pull					Fetch + merge
+
+git tag "nombre"				Crear un tag
+git show "nombre"				Mostrar un tag
+git push origin master --tags			Subir tags al repo remoto
+
+git checkout -b <rama>				Crear rama y cambiarnos a ella
+git branch -d <rama>				Eliminar una rama (si hubo merge)
+git branch -D <rama>				Eliminar una rama (sin importar si hubo merge)
+git branch					Listar todas las ramas
+git branch -v					Mostrar últimos commits de cada rama
+git branch --merged				Mostrar las ramas con merge
+git branch --no-merged				Mostrar las ramas sin merge
+git push origin :<rama>				Eliminar una rama remota
+
+touch .gitignore
+Agregar los archivos ignorados --> *.ext	Evitar que ciertos archivos se suban al repo
+
